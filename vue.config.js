@@ -1,11 +1,14 @@
+const indexCoreVal="indexCore"
+const adminCoreVal="adminCore"
+
 module.exports = {
     publicPath:'./',
     pages: {
       index: {
         // page 的入口
-        entry: 'src/index/main.js',
+        entry: `src/${indexCoreVal}/main.js`,
         // 模板来源
-        template: 'public/index.html',
+        template: `public/index.html`,
         // 在 dist/index.html 的输出
         filename: 'index.html',
         // 当使用 title 选项时，
@@ -17,7 +20,7 @@ module.exports = {
       },
       admin: {
         // page 的入口
-        entry: 'src/admin/main.js',
+        entry: `src/${adminCoreVal}/main.js`,
         // 模板来源
         template: 'public/admin.html',
         // 在 dist/index.html 的输出
