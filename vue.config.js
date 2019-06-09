@@ -1,3 +1,6 @@
+const CompressionWebpackPlugin = require('compression-webpack-plugin');
+const productionGzipExtensions = ['js', 'css'];
+const isProduction = process.env.NODE_ENV === 'production';
 const indexCoreVal="indexCore"
 const adminCoreVal="adminCore"
 
@@ -39,5 +42,18 @@ module.exports = {
       // 输出文件名会被推导为 `subpage.html`。
       // subpage: 'src/subpage/main.js',
       // subpage: 'src/subpage/main.js'
+    },
+    // lintOnSave: process.env.NODE_ENV !== 'production',
+    productionSourceMap:false,
+    configureWebpack: config => {
+      if (isProduction) {
+        config.plugins.push(new CompressionWebpackPlugin({
+          algorithm: 'gzip',
+          test: new RegExp('\\.(' + productionGzipExtensions.join('|') + ')$'),
+          threshold: 10240,
+          minRatio: 0.8
+        }))
+      }
     }
+    
   }

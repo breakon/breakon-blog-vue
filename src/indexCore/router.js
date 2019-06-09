@@ -5,7 +5,7 @@ import Home from '@/views/Home.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',  //去掉url中的#
+  // mode: 'history',  //去掉url中的#
   routes: [
     {
       path: '/',

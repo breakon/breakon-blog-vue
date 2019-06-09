@@ -1,13 +1,6 @@
 <template>
-<div>
-  <div>
-    <a-button type="primary">Primary</a-button>
-    <a-button>Default</a-button>
-    <a-button type="dashed">Dashed</a-button>
-    <a-button type="danger">Danger</a-button>
-  </div>
-</div>
-    <!-- <a-layout id="components-layout-demo-top-side">
+<div> 
+   <a-layout id="components-layout-demo-top-side">
     <a-layout-header class="header">
       <div class="logo" />
       <a-menu
@@ -66,7 +59,8 @@
     <a-layout-footer style="text-align: center">
       Ant Design ©2018 Created by Ant UED
     </a-layout-footer>
-  </a-layout> -->
+  </a-layout>
+</div>
 </template>
 
 <script>
@@ -74,7 +68,7 @@
 
 export default {
   name: 'home',
-  
+ collapsed: false,
 }
 </script>
 <style >
@@ -85,4 +79,22 @@ export default {
   margin: 16px 28px 16px 0;
   float: left;
 }
+#components-layout-demo-custom-trigger .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+
+#components-layout-demo-custom-trigger .trigger:hover {
+  color: #1890ff;
+}
+
+#components-layout-demo-custom-trigger .logo {
+  height: 32px;
+  background: rgba(255,255,255,.2);
+  margin: 16px;
+}
+  
 </style>

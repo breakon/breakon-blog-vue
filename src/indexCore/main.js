@@ -4,11 +4,7 @@ import router from './router'
 import store from './store'
 import "@/config/antconfig"
 import "@/assets/css/reset.css" 
-// import { Table } from "ant-design-vue";
-
-// import 'ant-design-vue/lib/table/style/css'
-
-// Vue.component(Table.name, Table)
+ 
 
 
 Vue.config.productionTip = false
