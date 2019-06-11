@@ -9,9 +9,16 @@
         :defaultSelectedKeys="['2']"
         :style="{ lineHeight: '64px' }"
       >
-        <a-menu-item key="1">nav 1</a-menu-item>
-        <a-menu-item key="2">nav 2</a-menu-item>
-        <a-menu-item key="3">nav 3</a-menu-item>
+        <a-menu-item key="1">首页</a-menu-item>
+        <a-menu-item key="2">首页2</a-menu-item>
+        <a-menu-item key="3">首页3</a-menu-item>
+        <a-menu-item key="4">首页3</a-menu-item>
+        <a-menu-item key="5">首页3</a-menu-item>
+        <a-menu-item key="6">首页3</a-menu-item>
+        <a-menu-item key="7">首页3</a-menu-item>
+        <a-menu-item key="8">首页3</a-menu-item>
+        <a-menu-item key="9">首页3</a-menu-item>
+        <a-menu-item key="10">首页3</a-menu-item>
       </a-menu>
     </a-layout-header>
     <a-layout-content style="padding: 0 50px">
@@ -52,7 +59,9 @@
           </a-menu>
         </a-layout-sider>
         <a-layout-content :style="{ padding: '0 24px', minHeight: '280px' }">
-          Content
+           <ButtonCounter />
+          <!-- <Dynamic />
+          <Functional /> -->
         </a-layout-content>
       </a-layout>
     </a-layout-content>
@@ -64,21 +73,28 @@
 </template>
 
 <script>
-// @ is an alias to /src
+// // @ is an alias to /src
+// import moment from "moment";
+import ButtonCounter from "@/components/jsx-len/ButtonCounter";
+// import Dynamic from "@/components/jsx-len/Dynamic";
+// import Functional from "@/components/jsx-len/Functional"; 
 
 export default {
   name: 'home',
  collapsed: false,
+ components: {
+    ButtonCounter, 
+  }
 }
 </script>
 <style >
-  #components-layout-demo-top-side .logo {
+  /* #components-layout-demo-top-side .logo {
   width: 120px;
   height: 31px;
   background: rgba(255,255,255,.2);
   margin: 16px 28px 16px 0;
   float: left;
-}
+} */
 #components-layout-demo-custom-trigger .trigger {
   font-size: 18px;
   line-height: 64px;
