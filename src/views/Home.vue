@@ -1,7 +1,7 @@
 <template>
 <div> 
    <a-layout id="components-layout-demo-top-side">
-    <a-layout-header class="header">
+    <a-layout-header style="padding: 0 0px " class="header">
       <div class="logo" />
       <a-menu
         theme="dark"
@@ -21,12 +21,12 @@
         <a-menu-item key="10">首页3</a-menu-item>
       </a-menu>
     </a-layout-header>
-    <a-layout-content style="padding: 0 50px">
-      <a-breadcrumb style="margin: 16px 0">
+    <a-layout-content >
+      <!-- <a-breadcrumb style="margin: 16px 0">
         <a-breadcrumb-item>Home</a-breadcrumb-item>
         <a-breadcrumb-item>List</a-breadcrumb-item>
         <a-breadcrumb-item>App</a-breadcrumb-item>
-      </a-breadcrumb>
+      </a-breadcrumb> -->
       <a-layout style="padding: 24px 0; background: #fff">
         <a-layout-sider width="200" style="background: #fff">
           <a-menu
